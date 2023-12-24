@@ -30,7 +30,7 @@ div.statusbar {
   height: 32.73%;
   top: 24.4%;
   left: 9.7%;
-  border: red solid 2px;
+  /* border: red solid 2px; */
 }
 
 .logoImage {
@@ -63,17 +63,6 @@ div.statusbar {
   display: none;
 }
 
-/* form {
-  position: absolute;
-  border-radius: 6px;
-  box-shadow: 0px 4px 50px 0px #0408131a;
-  width: 40.28%;
-  height: 80.71%;
-  top: 9.64%;
-  left: 50%;
-  background-color: #ffffff;
-  border: pink solid 2px;
-} */
 .formcontainer {
   display: flex;
   /* justify-content: space-between; */
@@ -86,16 +75,24 @@ div.statusbar {
   top: 9.64%;
   left: 50%;
   background-color: #ffffff;
-  border: pink solid 2px;
-  /* justify-items: center; */
+  /* border: pink solid 2px; */
+}
+form{
+  display: flex;
+  flex-direction: column;
 }
 .inputBox {
+  position: relative;
+  left: 2%;
   display: flex;
-  /* justify-content: space-around; */
   margin-top: 10px;
-  width: 100%;
-  align-content: center;
+  width: 96%;
 .input{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+align-content: center;
+
   width: 100%;
 }
   input {
@@ -107,13 +104,32 @@ div.statusbar {
   }
 }
 
+#password{
+  background-image: url(./show.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+#activity{
+  background-image: url(./Vector.arrowdown.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
 
+#birthDay{
+  background-image: url(./Vector.calender.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
 .singleBox {
   /* display: flex; */
   /* justify-content: center; */
   margin-top: 10px;
   /* width: 100%; */
   .input {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  align-content: center;
     width: 100%;
   }
 
@@ -135,8 +151,8 @@ input::placeholder {
 }
 
 .button {
-  /* display: flex; */
-  /* justify-content: center; */
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 
   button {
@@ -154,14 +170,13 @@ input::placeholder {
   }
 }
 .terms {
-  
-  /* justify-content: center; */
-  width: 79.82%;
+position: relative;
+left: 9%;  
+width: 79.82%;
   height: 25px;
   font-size: 14px;
   font-weight: 400;
   margin-top: 10px;
-  /* line-height: 25px; */
   text-align: center;
 }
 a {
@@ -175,7 +190,7 @@ a {
     justify-content: center;
     width: 100%;
     height: 1294px;
-    border: yellow 1px solid;
+    /* border: yellow 1px solid; */
   }
   .logoBox {
     display: none;
@@ -183,22 +198,25 @@ a {
   div.statusbar {
     display: block;
     width: 100%;
-    height: 44px;
+    height: 55px;
     border: green solid 1px;
   }
+  .statusbar{
+    background-size:cover;
+    background-repeat: no-repeat ;
+background-image: url(./status\ bar\ -\ black.png);  }
 
   .mobileDescription {
     position: absolute;
     top: 100px;
-    /* left: 24px; */
+    left: 8%;
     display: block;
     font-size: 14px;
     color: #737373;
     width: 87%;
     height: 100px;
 
-    img.statusbar {
-    }
+    
 
     img.mobilelogo {
       position: relative;
@@ -224,29 +242,28 @@ a {
       font-size: 14px;
       color: #737373;
       width: 97%;
-      border: red solid 1px;
+      /* border: red solid 1px; */
     }
   }
 
   .formcontainer {
-    display: flex;
-    justify-content: center;
-    position: absolute;
     border-radius: 6px;
     box-shadow: 0px 4px 50px 0px #0408131a;
-    width: 86%;
+    width: 84%;
 
-    height: 800px;
+    height: 70%;
     background-color: #ffffff;
     top: 300px;
-    left: 24px;
-    border: pink solid 2px;
+    left: 8%;
+    /* border: pink solid 2px; */
   }
   .input {display:inline;
     justify-content: space-around;
   }
 
   .inputBox {
+    position: relative;
+    left: 4.5%;
     display: flex;
     flex-direction: column;
     width: 90.21%;
@@ -263,15 +280,21 @@ a {
     }
   }
   .singleBox {
-    /* display: flex; */
-    /* justify-content: center; */
+    position: relative;
+    left: 4.5%;
+    display: flex;
+    justify-content: center;
     margin-top: 0;
+    width: 90.21%;
+
     div {
       margin-top: 20px;
     }
 
     input {
-      width: 295px;
+      width: 90.21%;
+
+      /* width: 295px; */
       height: 48px;
       border: 1px solid #f0f0f0;
       border-radius: 2px;
@@ -280,7 +303,7 @@ a {
   label {
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
   input::placeholder {
     font-family: "Space Grotesk", sans-serif;
@@ -290,10 +313,16 @@ a {
   }
 
   .button {
+    position: relative;
+    left: 4.5%;
     margin-top: 20px;
+    width: 90.21%;
+
 
     button {
-      width: 295px;
+      /* width: 295px; */
+      width: 90.21%;
+
       height: 48px;
       background: #2ec4b6;
 
@@ -306,6 +335,8 @@ a {
     }
   }
   .terms {
+position: absolute;
+top: 95%;
     /* width: 463px; */
     width: 87%;
 
@@ -319,6 +350,5 @@ a {
     text-align: center;
   }
   a {
-    color: #2ec4b6;
+    color: #2ec4b6; }
   }
-}
