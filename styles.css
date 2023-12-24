@@ -201,10 +201,10 @@ a {
     height: 55px;
     border: green solid 1px;
   }
-  .statusbar{
+  /* .statusbar{
     background-size:cover;
     background-repeat: no-repeat ;
-background-image: url(./status\ bar\ -\ black.png);  }
+background-image: url(./status\ bar\ -\ black.png);  } */
 
   .mobileDescription {
     position: absolute;
